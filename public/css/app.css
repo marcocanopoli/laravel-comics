@@ -1,0 +1,167 @@
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;
+
+700&family=Roboto:wght@400;500;700&display=swap);@import url(https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@400;500;700&display=swap);* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+header div {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+header div > a {
+  height: 70%;
+}
+
+header div > a > img {
+  height: 100%;
+}
+
+header div ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+
+header div ul li {
+  padding: 0 25px;
+}
+
+header div ul li a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #494949;
+}
+
+header div ul li a:hover,
+header div ul li a.active {
+  color: #0282f9;
+}
+
+header div ul li a.active::after,
+header div ul li a:hover::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  height: 5px;
+  width: 100%;
+  background-color: #0282f9;
+}
+
+footer {
+  background: url("/img/footer-bg.jpg") no-repeat top;
+  background-size: cover;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+footer h2 {
+  padding: 10px 0;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+footer .top,
+footer .bottom {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+footer .top {
+  display: flex;
+  height: 370px;
+  padding: 30px 0;
+  background: url("/img/dc-logo-bg.png") no-repeat;
+  background-position: right center;
+}
+
+footer .top div {
+  margin-right: 30px;
+}
+
+footer .top div ul {
+  list-style: none;
+}
+
+footer .top div ul a {
+  display: inline-block;
+  padding: 2px 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #999999;
+}
+
+footer .top div ul a:hover {
+  color: #0282f9;
+}
+
+footer .bottom-container {
+  height: 120px;
+  background-color: #333333;
+}
+
+footer .bottom-container .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+footer .bottom-container .bottom .button {
+  display: inline-block;
+  padding: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #0282f9;
+  color: #fff;
+}
+
+footer .bottom-container .bottom div {
+  display: flex;
+  align-items: center;
+}
+
+footer .bottom-container .bottom div span {
+  margin-right: 30px;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0282f9;
+}
+
+footer .bottom-container .bottom div ul {
+  display: flex;
+  list-style: none;
+}
+
+footer .bottom-container .bottom div ul li {
+  padding: 0 10px;
+}
+

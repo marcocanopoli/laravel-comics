@@ -1,0 +1,58 @@
+@import '_variables.scss';
+@import '_mixins.scss';
+
+header {
+    @include flex-center ('vertical');
+    justify-content: space-between;        
+    height: 120px;
+    font-family: $brandFont, sans-serif;
+
+    div {
+        @include container-center;
+        @include flex-center ('vertical');
+        justify-content: space-between;
+        height: 100%;
+
+        & > a {
+            height: 70%;
+        }
+
+        & > a > img {
+            height: 100%;
+        }
+
+        ul {
+            @include inline-list;
+            height: 100%;
+
+            li {
+                padding: 0 25px;
+
+                a {                        
+                    @include flex-center ('vertical');
+                    position: relative;
+                    height: 100%;
+                    font-weight: 700;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: scale-color($secondColor, $lightness: +20%);
+
+                    &:hover,
+                    &.active {
+                        color: $mainColor;
+                    }
+                    &.active::after,
+                    &:hover::after {
+                        position: absolute;
+                        content: '';
+                        bottom: 0;
+                        height: 5px;
+                        width: 100%;
+                        background-color: $mainColor;
+                    }
+                }
+            }
+            
+        }
+    }
+}

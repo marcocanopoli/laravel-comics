@@ -1,0 +1,30 @@
+@mixin container-center {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+@mixin inline-list {
+    display: flex;
+    list-style: none;
+}
+
+@mixin flex-center ($axis: 'both') { 
+
+    display: flex;
+    
+    @if $axis == 'horizontal' {
+        justify-content: center;
+    } @else if $axis == 'vertical' {
+        align-items: center;
+    } @else if $axis == 'both' {
+        justify-content: center;
+        align-items: center;        
+    }
+}
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
