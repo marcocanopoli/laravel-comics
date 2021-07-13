@@ -11,3 +11,12 @@
 html, body {    
     font-family: $altFont, sans-serif;
 }
+
+.button {
+    font-family: $brandFont, sans-serif;
+    background-color: $mainColor;
+    color: $textColor;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}

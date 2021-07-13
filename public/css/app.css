@@ -11,6 +11,15 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.button {
+  font-family: "PT Sans Narrow", sans-serif;
+  background-color: #0282f9;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -134,13 +143,8 @@ footer .bottom-container .bottom {
 footer .bottom-container .bottom .button {
   display: inline-block;
   padding: 15px;
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
   border: 2px solid #0282f9;
-  color: #fff;
 }
 
 footer .bottom-container .bottom div {
@@ -163,5 +167,82 @@ footer .bottom-container .bottom div ul {
 
 footer .bottom-container .bottom div ul li {
   padding: 0 10px;
+}
+
+.comics-main .hero {
+  height: 400px;
+  overflow: hidden;
+}
+
+.comics-main .comics {
+  background-color: #1c1c1c;
+  text-align: center;
+}
+
+.comics-main .comics > .button {
+  padding: 10px 50px;
+}
+
+.comics-main .comics .comics-container {
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.comics-main .comics .comics-container .button {
+  position: absolute;
+  padding: 10px 30px;
+  top: 0;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 32px;
+}
+
+.card {
+  width: 190px;
+  margin-bottom: 50px;
+}
+
+.card .img-box {
+  position: relative;
+  cursor: pointer;
+}
+
+.card .img-box img {
+  display: block;
+  position: relative;
+  height: 190px;
+  width: 100%;
+  margin-bottom: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.card .img-box::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(2, 130, 249, 0.7);
+  transition: 0.2s;
+  opacity: 0;
+}
+
+.card .img-box:hover::after {
+  opacity: 1;
+}
+
+.card p {
+  color: #fff;
+  text-transform: uppercase;
 }
 

@@ -1,0 +1,33 @@
+.comics-main {
+    .hero {
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .comics {
+        background-color: $secondColor;
+        text-align: center;
+        
+        & > .button {
+            padding: 10px 50px;
+        }
+        
+        .comics-container {
+            @include container-center;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-top: 50px;
+            
+            .button {
+                position: absolute;
+                padding: 10px 30px;
+                top: 0;
+                left: 0;
+                transform: translateY(-50%);            
+                font-size: 32px;
+            }
+        }
+    }
+}
