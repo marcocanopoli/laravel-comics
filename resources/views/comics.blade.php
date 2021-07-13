@@ -19,7 +19,7 @@
                 </div>
                 @endforeach
             </div>
-            <a href="/" class="button">Current Series</a>
+            {{-- <a href="/" class="button">Current Series</a> --}}
         </div>
     </section>
 @endsection
